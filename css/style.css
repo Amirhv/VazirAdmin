@@ -132,7 +132,6 @@ a:hover{
 }
 
 .vvv-search-input:focus {
-    box-shadow: none;
     border-style: solid;
     border-width: 1px 1px 1px 0px;
 }
