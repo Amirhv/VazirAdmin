@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Vazir;
+    src: url('../font/vazir/Vazir.eot');
+    src: url('../font/vazir/Vazir.eot?#iefix') format('embedded-opentype'),
+    url('../font/vazir/Vazir.woff2') format('woff2'),
+    url('../font/vazir/Vazir.woff') format('woff'),
+    url('../font/vazir/Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../font/vazir/Vazir-Bold.eot');
+    src: url('../font/vazir/Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../font/vazir/Vazir-Bold.woff2') format('woff2'),
+    url('../font/vazir/Vazir-Bold.woff') format('woff'),
+    url('../font/vazir/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../font/vazir/Vazir-Black.eot');
+    src: url('../font/vazir/Vazir-Black.eot?#iefix') format('embedded-opentype'),
+    url('../font/vazir/Vazir-Black.woff2') format('woff2'),
+    url('../font/vazir/Vazir-Black.woff') format('woff'),
+    url('../font/vazir/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../font/vazir/Vazir-Medium.eot');
+    src: url('../font/vazir/Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../font/vazir/Vazir-Medium.woff2') format('woff2'),
+    url('../font/vazir/Vazir-Medium.woff') format('woff'),
+    url('../font/vazir/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../font/vazir/Vazir-Light.eot');
+    src: url('../font/vazir/Vazir-Light.eot?#iefix') format('embedded-opentype'),
+    url('../font/vazir/Vazir-Light.woff2') format('woff2'),
+    url('../font/vazir/Vazir-Light.woff') format('woff'),
+    url('../font/vazir/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url('../font/vazir/Vazir-Thin.eot');
+    src: url('../font/vazir/Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../font/vazir/Vazir-Thin.woff2') format('woff2'),
+    url('../font/vazir/Vazir-Thin.woff') format('woff'),
+    url('../font/vazir/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+body {
+    font-family: Vazir, sans-serif;
+    background-color: #f8fafc;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.vvv-bg-success{
+    background-color: #4caf50;
+}
+
+.vvv-bg-info{
+    background-color: #00cae3
+}
+
+.vvv-bg-warning{
+    background-color: #ff9800;
+}
+
+.vvv-bg-danger{
+    background-color: #ff5252;
+}
+
+/* navbar */
+.vvv-vazir-admin {
+    background-color: #243441;
+}
+
+.vvv-sidebar {
+    height: 100vh;
+    background-color: #243441;
+}
+
+.vvv-bottom-border {
+    border-bottom: 1px groove #eeeeee;
+}
+
+.vvv-circle {
+    height: 50px;
+    width: 50px;
+}
+
+.vvv-sidebar-link {
+    transition: all .2s;
+}
+
+.vvv-sidebar-link:hover {
+    background-color: #3b4d5a;
+}
+
+.vvv-current {
+    background-color: #475c73;
+    transition: all .2s;
+}
+
+.vvv-current:hover {
+    background-color: #42699b;
+}
+
+.vvv-search-input {
+    box-shadow: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 0px;
+}
+
+.vvv-search-input:focus {
+    box-shadow: none;
+    border-style: solid;
+    border-width: 1px 1px 1px 0px;
+}
+
+.vvv-search-button {
+    border-radius: 0.25rem 0 0 0.25rem;
+}
+
+.vvv-top-nav-color {
+    background-color: #ffffff;
+}
+
+.vvv-icon-parent {
+    position: relative;
+}
+
+.vvv-icon-badge {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
+
+.vvv-icon-hover:hover {
+    background-color: #d7d4d5;
+    border-radius: 10%;
+}
+
+
+@media (max-width: 768px) {
+    .vvv-sidebar {
+        position: static;
+        height: auto;
+    }
+
+    .vvv-top-navbar {
+        display: none;
+        position: static;
+    }
+}
+
+/* end of navbar */

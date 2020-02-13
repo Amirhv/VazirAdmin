@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VazirAdmin</title>
+
+    <!--  css  -->
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--  fontawesome icons  -->
+    <link rel="stylesheet" href="css/fontawesome-all.css">
+
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-light border-bottom">
+    <button class="navbar-toggler mr-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#myNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- sidebar -->
+                <div class="col-xl-2 col-lg-3 col-md-4 vvv-sidebar fixed-top p-0">
+                    <a href="#"
+                       class="navbar-brand text-white d-block mx-auto text-center vvv-vazir-admin vvv-bottom-border"
+                       style="height: 50px;">
+                        داشبورد وزیر
+                    </a>
+                    <div class="vvv-bottom-border py-2">
+                        <img src="images/avatar-placeholder.png" class="rounded-circle vvv-circle ml-3 mr-2" alt="">
+                        <a href="#" class="text-white">امیر حسین وزیری</a>
+                    </div>
+                    <ul class="navbar-nav flex-column pt-2 mt-1">
+                        <li class="nav-item p-1 vvv-current">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-home fa-lg text-light ml-2"></i>
+                                <span class="text-white">داشبورد</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-1 vvv-sidebar-link">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-user fa-lg text-light ml-2"></i>
+                                <span class="text-white">حساب کاربری</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-1 vvv-sidebar-link">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-envelope fa-lg text-light ml-2"></i>
+                                <span class="text-white">پیام ها</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-1 vvv-sidebar-link">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-shopping-cart fa-lg text-light ml-2"></i>
+                                <span class="text-white">فروش</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-1 vvv-sidebar-link">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-chart-line fa-lg text-light ml-2"></i>
+                                <span class="text-white">آمار</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-1 vvv-sidebar-link">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-chart-bar fa-lg text-light ml-2"></i>
+                                <span class="text-white">نمودار ها</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-1 vvv-sidebar-link">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-table fa-lg text-light ml-2"></i>
+                                <span class="text-white">جدول ها</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-1 vvv-sidebar-link">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-wrench fa-lg text-light ml-2"></i>
+                                <span class="text-white">تنظیمات</span>
+                            </a>
+                        </li>
+                        <li class="nav-item p-1 vvv-sidebar-link">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-file-alt fa-lg text-light ml-2"></i>
+                                <span class="text-white">مستندات</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end of sidebar -->
+
+                <!-- top-nav -->
+                <div class="col-xl-10 col-lg-9 col-md-8 mr-auto fixed-top vvv-top-nav-color vvv-top-navbar border-bottom">
+                    <div class="row align-items-center" style="height: 50px">
+                        <!-- search -->
+                        <div class="col-md-4">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control vvv-search-input"
+                                           placeholder="جست و جو کنید ...">
+                                    <button class="btn btn-warning vvv-search-button" type="button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-5">
+
+                        </div>
+                        <!-- icons -->
+                        <div class="col-md-3">
+                            <ul class="navbar-nav ml-1 float-left">
+                                <!-- comment-icon -->
+                                <li class="nav-item vvv-icon-parent vvv-icon-hover">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-comment-alt fa-lg text-muted"></i>
+                                        <span class="vvv-icon-badge badge-info">2</span>
+                                    </a>
+                                </li>
+                                <!-- bell-icon -->
+                                <li class="nav-item vvv-icon-parent vvv-icon-hover">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-bell fa-lg text-muted"></i>
+                                        <span class="vvv-icon-badge badge-warning">2</span>
+                                    </a>
+                                </li>
+                                <!-- sign-out-icon -->
+                                <li class="nav-item mr-md-3 vvv-icon-hover" data-toggle="modal" data-target="#sign-out">
+                                    <a href="#" class="nav-link">
+                                        <i class="fas fa-sign-out-alt fa-lg text-danger"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of top-nav -->
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- end of navbar -->
+
+<!-- modal -->
+<div class="modal fade" id="sign-out">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">آیا میخواهید خارج شوید؟</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                برای خارج شدن از پنل ادمین بر روی دکمه خروج کلیک کنید.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">ماندن</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">خروج</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of modal -->
+
+<!-- cards -->
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+                <div class="row pt-md-5 mt-md-3 pt-2 mt-2 mb-5">
+                    <!-- first card -->
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card border-0 mb-1 shadow-sm">
+                            <div class="card-body rounded vvv-bg-success">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-light">
+                                        <h4 class="card-title">فروش</h4>
+                                        <h6>۱۲ میلیون تومان</h6>
+                                    </div>
+                                    <i class="fas fa-shopping-cart fa-4x text-light"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second card -->
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card border-0 mb-1 shadow-sm">
+                            <div class="card-body vvv-bg-info rounded">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-light">
+                                        <h4 class="card-title">بازدید</h4>
+                                        <h6>۳۵۰۰۰ بار</h6>
+                                    </div>
+                                    <i class="fas fa-eye fa-4x text-light"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- third card -->
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card border-0 mb-1 shadow-sm">
+                            <div class="card-body vvv-bg-warning rounded">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-light">
+                                        <h4 class="card-title">کاربران</h4>
+                                        <h6>۱۲۵۰۰۰ تن</h6>
+                                    </div>
+                                    <i class="fas fa-users fa-4x text-light"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fourth card -->
+                    <div class="col-xl-3 col-md-6">
+                        <div class="card border-0 mb-1 shadow-sm">
+                            <div class="card-body vvv-bg-danger rounded">
+                                <div class="d-flex justify-content-between">
+                                    <div class="text-light">
+                                        <h4 class="card-title">کاربران جدید</h4>
+                                        <h6>۲۵۰ تن</h6>
+                                    </div>
+                                    <i class="fas fa-user-friends fa-4x text-light"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of cards -->
+
+<!-- tables -->
+<section>
+    <div class="container-fluid">
+        <div class="row mb-4">
+            <div class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+                <div class="row">
+                    <div class="col-xl-6 col-12 mb-4">
+                        <h4 class="text-muted mb-3">حقوق کارمندان</h4>
+                        <table class="table table-hover shadow bg-white">
+                            <thead class="text-light">
+                            <tr class="bg-dark">
+                                <th>شناسه</th>
+                                <th>نام</th>
+                                <th>نام خانوادگی</th>
+                                <th>حقوق</th>
+                                <th>تاریخ</th>
+                                <th>ارتباط</th>
+                            </tr>
+                            </thead>
+                            <tbody class="bg-white">
+                            <tr>
+                                <th>۱</th>
+                                <td>سهراب</td>
+                                <td>رستمی</td>
+                                <td>۵,۰۰۰,۰۰۰ تومان</td>
+                                <td>۱۳۹۸/۱۱/۲۴</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info">پیام</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>۲</th>
+                                <td>سهراب</td>
+                                <td>رستمی</td>
+                                <td>۵,۰۰۰,۰۰۰ تومان</td>
+                                <td>۱۳۹۸/۱۱/۲۴</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info">پیام</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>۳</th>
+                                <td>سهراب</td>
+                                <td>رستمی</td>
+                                <td>۵,۰۰۰,۰۰۰ تومان</td>
+                                <td>۱۳۹۸/۱۱/۲۴</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info">پیام</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>۴</th>
+                                <td>سهراب</td>
+                                <td>رستمی</td>
+                                <td>۵,۰۰۰,۰۰۰ تومان</td>
+                                <td>۱۳۹۸/۱۱/۲۴</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info">پیام</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>۵</th>
+                                <td>سهراب</td>
+                                <td>رستمی</td>
+                                <td>۵,۰۰۰,۰۰۰ تومان</td>
+                                <td>۱۳۹۸/۱۱/۲۴</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info">پیام</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- pagination -->
+                        <nav>
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a href="#" class="page-link py-2 px-3">
+                                        <span>&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="#" class="page-link py-2 px-3">
+                                        ۱
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link py-2 px-3">
+                                        ۲
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link py-2 px-3">
+                                        ۳
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link py-2 px-3">
+                                        <span>&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- end of pagination -->
+                    </div>
+                    <div class="col-xl-6 col-12 mb-4">
+                        <h4 class="text-muted mb-3">حقوق کارمندان</h4>
+                        <table class="table table-dark table-hover shadow">
+                            <thead class="text-light">
+                            <tr>
+                                <th>شناسه</th>
+                                <th>نام</th>
+                                <th>نام خانوادگی</th>
+                                <th>حقوق</th>
+                                <th>تاریخ</th>
+                                <th>ارتباط</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th>۱</th>
+                                <td>سهراب</td>
+                                <td>رستمی</td>
+                                <td>۵,۰۰۰,۰۰۰ تومان</td>
+                                <td>۱۳۹۸/۱۱/۲۴</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info">پیام</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>۲</th>
+                                <td>سهراب</td>
+                                <td>رستمی</td>
+                                <td>۵,۰۰۰,۰۰۰ تومان</td>
+                                <td>۱۳۹۸/۱۱/۲۴</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info">پیام</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>۳</th>
+                                <td>سهراب</td>
+                                <td>رستمی</td>
+                                <td>۵,۰۰۰,۰۰۰ تومان</td>
+                                <td>۱۳۹۸/۱۱/۲۴</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info">پیام</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>۴</th>
+                                <td>سهراب</td>
+                                <td>رستمی</td>
+                                <td>۵,۰۰۰,۰۰۰ تومان</td>
+                                <td>۱۳۹۸/۱۱/۲۴</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info">پیام</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>۵</th>
+                                <td>سهراب</td>
+                                <td>رستمی</td>
+                                <td>۵,۰۰۰,۰۰۰ تومان</td>
+                                <td>۱۳۹۸/۱۱/۲۴</td>
+                                <td>
+                                    <button class="btn btn-sm btn-info">پیام</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- pagination -->
+                        <nav>
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a href="#" class="page-link py-2 px-3">
+                                        <span>&laquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active">
+                                    <a href="#" class="page-link py-2 px-3">
+                                        ۱
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link py-2 px-3">
+                                        ۲
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link py-2 px-3">
+                                        ۳
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a href="#" class="page-link py-2 px-3">
+                                        <span>&raquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <!-- end of pagination -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end of tables -->
+
+<hr>
+
+<!-- footer -->
+<footer>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-10 col-lg-9 col-md-8 mr-auto">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <ul class="list-inline">
+                            <li class="list-inline-item mx-2">
+                                <a href="#" class="text-dark">خانه</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a href="#" class="text-dark">درباره ما</a>
+                            </li>
+                            <li class="list-inline-item mx-2">
+                                <a href="#" class="text-dark">تماس با ما</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <p class="text-dark" style="direction: ltr">&copy; 2020 Copyright</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end of footer -->
+
+<!-- javascript -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
